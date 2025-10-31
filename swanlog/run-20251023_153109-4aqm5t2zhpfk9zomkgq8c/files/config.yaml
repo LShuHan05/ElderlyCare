@@ -1,0 +1,965 @@
+FRAMEWORK:
+  desc: ''
+  sort: 9
+  value: 🤗transformers
+_name_or_path:
+  desc: ''
+  sort: 80
+  value: ./output/elderly/sft_merged_model
+accelerator_config:
+  desc: ''
+  sort: 163
+  value:
+    dispatch_batches: null
+    even_batches: true
+    gradient_accumulation_kwargs: null
+    non_blocking: false
+    split_batches: false
+    use_seedable_sampler: true
+activation_offloading:
+  desc: ''
+  sort: 226
+  value: false
+adafactor:
+  desc: ''
+  sort: 169
+  value: false
+adam_beta1:
+  desc: ''
+  sort: 103
+  value: 0.9
+adam_beta2:
+  desc: ''
+  sort: 104
+  value: 0.999
+adam_epsilon:
+  desc: ''
+  sort: 105
+  value: 1.0e-08
+add_cross_attention:
+  desc: ''
+  sort: 41
+  value: false
+architectures:
+  desc: ''
+  sort: 43
+  value:
+  - Qwen3ForCausalLM
+attention_bias:
+  desc: ''
+  sort: 28
+  value: false
+attention_dropout:
+  desc: ''
+  sort: 29
+  value: 0.0
+auto_find_batch_size:
+  desc: ''
+  sort: 200
+  value: false
+average_tokens_across_devices:
+  desc: ''
+  sort: 217
+  value: true
+bad_words_ids:
+  desc: ''
+  sort: 68
+  value: null
+batch_eval_metrics:
+  desc: ''
+  sort: 212
+  value: false
+begin_suppress_tokens:
+  desc: ''
+  sort: 77
+  value: null
+bf16:
+  desc: ''
+  sort: 134
+  value: true
+bf16_full_eval:
+  desc: ''
+  sort: 138
+  value: false
+bos_token_id:
+  desc: ''
+  sort: 51
+  value: null
+center_rewards_coefficient:
+  desc: ''
+  sort: 225
+  value: null
+chat_template_path:
+  desc: ''
+  sort: 219
+  value: null
+chunk_size_feed_forward:
+  desc: ''
+  sort: 37
+  value: 0
+cross_attention_hidden_size:
+  desc: ''
+  sort: 40
+  value: null
+data_seed:
+  desc: ''
+  sort: 132
+  value: null
+dataloader_drop_last:
+  desc: ''
+  sort: 146
+  value: false
+dataloader_num_workers:
+  desc: ''
+  sort: 148
+  value: 0
+dataloader_persistent_workers:
+  desc: ''
+  sort: 179
+  value: false
+dataloader_pin_memory:
+  desc: ''
+  sort: 178
+  value: true
+dataloader_prefetch_factor:
+  desc: ''
+  sort: 149
+  value: null
+dataset_num_proc:
+  desc: ''
+  sort: 221
+  value: null
+dataset_path:
+  desc: ''
+  sort: 1
+  value: data/mixed_partially_shuffled.json
+ddp_backend:
+  desc: ''
+  sort: 142
+  value: null
+ddp_broadcast_buffers:
+  desc: ''
+  sort: 177
+  value: null
+ddp_bucket_cap_mb:
+  desc: ''
+  sort: 176
+  value: null
+ddp_find_unused_parameters:
+  desc: ''
+  sort: 175
+  value: null
+ddp_timeout:
+  desc: ''
+  sort: 204
+  value: 1800
+debug:
+  desc: ''
+  sort: 145
+  value: []
+decoder_start_token_id:
+  desc: ''
+  sort: 55
+  value: null
+deepspeed:
+  desc: ''
+  sort: 165
+  value: null
+disable_dropout:
+  desc: ''
+  sort: 220
+  value: true
+disable_tqdm:
+  desc: ''
+  sort: 152
+  value: false
+diversity_penalty:
+  desc: ''
+  sort: 79
+  value: 0.0
+do_eval:
+  desc: ''
+  sort: 89
+  value: true
+do_predict:
+  desc: ''
+  sort: 90
+  value: false
+do_sample:
+  desc: ''
+  sort: 57
+  value: false
+do_train:
+  desc: ''
+  sort: 88
+  value: false
+dtype:
+  desc: ''
+  sort: 34
+  value: bfloat16
+early_stopping:
+  desc: ''
+  sort: 58
+  value: false
+encoder_no_repeat_ngram_size:
+  desc: ''
+  sort: 67
+  value: 0
+eos_token:
+  desc: ''
+  sort: 222
+  value: <EOS_TOKEN>
+eos_token_id:
+  desc: ''
+  sort: 53
+  value: 151645
+eval_accumulation_steps:
+  desc: ''
+  sort: 98
+  value: null
+eval_delay:
+  desc: ''
+  sort: 99
+  value: 0
+eval_do_concat_batches:
+  desc: ''
+  sort: 194
+  value: true
+eval_on_start:
+  desc: ''
+  sort: 213
+  value: false
+eval_steps:
+  desc: ''
+  sort: 147
+  value: 100
+eval_strategy:
+  desc: ''
+  sort: 91
+  value: steps
+eval_use_gather_object:
+  desc: ''
+  sort: 216
+  value: false
+exponential_decay_length_penalty:
+  desc: ''
+  sort: 75
+  value: null
+finetuning_task:
+  desc: ''
+  sort: 44
+  value: null
+forced_bos_token_id:
+  desc: ''
+  sort: 72
+  value: null
+forced_eos_token_id:
+  desc: ''
+  sort: 73
+  value: null
+fp16:
+  desc: ''
+  sort: 135
+  value: false
+fp16_backend:
+  desc: ''
+  sort: 195
+  value: auto
+fp16_full_eval:
+  desc: ''
+  sort: 139
+  value: false
+fp16_opt_level:
+  desc: ''
+  sort: 136
+  value: O1
+fsdp:
+  desc: ''
+  sort: 159
+  value: []
+fsdp_config:
+  desc: ''
+  sort: 161
+  value:
+    min_num_params: 0
+    xla: false
+    xla_fsdp_grad_ckpt: false
+    xla_fsdp_v2: false
+fsdp_min_num_params:
+  desc: ''
+  sort: 160
+  value: 0
+fsdp_transformer_layer_cls_to_wrap:
+  desc: ''
+  sort: 162
+  value: null
+full_determinism:
+  desc: ''
+  sort: 201
+  value: false
+gradient_accumulation_steps:
+  desc: ''
+  sort: 97
+  value: 4
+gradient_checkpointing:
+  desc: ''
+  sort: 190
+  value: true
+gradient_checkpointing_kwargs:
+  desc: ''
+  sort: 191
+  value: null
+greater_is_better:
+  desc: ''
+  sort: 157
+  value: null
+group_by_length:
+  desc: ''
+  sort: 170
+  value: false
+half_precision_backend:
+  desc: ''
+  sort: 137
+  value: auto
+head_dim:
+  desc: ''
+  sort: 21
+  value: 128
+hidden_act:
+  desc: ''
+  sort: 22
+  value: silu
+hidden_size:
+  desc: ''
+  sort: 13
+  value: 2048
+hub_always_push:
+  desc: ''
+  sort: 188
+  value: false
+hub_model_id:
+  desc: ''
+  sort: 184
+  value: null
+hub_private_repo:
+  desc: ''
+  sort: 187
+  value: null
+hub_revision:
+  desc: ''
+  sort: 189
+  value: null
+hub_strategy:
+  desc: ''
+  sort: 185
+  value: every_save
+hub_token:
+  desc: ''
+  sort: 186
+  value: <HUB_TOKEN>
+id2label:
+  desc: ''
+  sort: 45
+  value:
+    '0': LABEL_0
+ignore_data_skip:
+  desc: ''
+  sort: 158
+  value: false
+include_for_metrics:
+  desc: ''
+  sort: 193
+  value: []
+include_inputs_for_metrics:
+  desc: ''
+  sort: 192
+  value: false
+include_num_input_tokens_seen:
+  desc: ''
+  sort: 209
+  value: 'no'
+include_tokens_per_second:
+  desc: ''
+  sort: 208
+  value: false
+initializer_range:
+  desc: ''
+  sort: 23
+  value: 0.02
+intermediate_size:
+  desc: ''
+  sort: 14
+  value: 6144
+is_decoder:
+  desc: ''
+  sort: 39
+  value: false
+is_encoder_decoder:
+  desc: ''
+  sort: 38
+  value: false
+jit_mode_eval:
+  desc: ''
+  sort: 133
+  value: false
+label2id:
+  desc: ''
+  sort: 46
+  value:
+    LABEL_0: 0
+label_names:
+  desc: ''
+  sort: 154
+  value: null
+label_smoothing_factor:
+  desc: ''
+  sort: 166
+  value: 0.0
+layer_types:
+  desc: ''
+  sort: 30
+  value:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+learning_rate:
+  desc: ''
+  sort: 101
+  value: 5.0e-05
+length_column_name:
+  desc: ''
+  sort: 171
+  value: length
+length_penalty:
+  desc: ''
+  sort: 65
+  value: 1.0
+liger_kernel_config:
+  desc: ''
+  sort: 215
+  value: null
+load_best_model_at_end:
+  desc: ''
+  sort: 155
+  value: false
+local_rank:
+  desc: ''
+  sort: 141
+  value: 0
+log_level:
+  desc: ''
+  sort: 113
+  value: passive
+log_level_replica:
+  desc: ''
+  sort: 114
+  value: warning
+log_on_each_node:
+  desc: ''
+  sort: 115
+  value: true
+logging_dir:
+  desc: ''
+  sort: 116
+  value: ./output/elderly/rm_model_temp_elderly/runs/Oct23_15-32-00_dsw-1416979-bc9cf8588-sntd5
+logging_first_step:
+  desc: ''
+  sort: 118
+  value: false
+logging_nan_inf_filter:
+  desc: ''
+  sort: 120
+  value: true
+logging_steps:
+  desc: ''
+  sort: 119
+  value: 10
+logging_strategy:
+  desc: ''
+  sort: 117
+  value: steps
+lora_alpha:
+  desc: ''
+  sort: 6
+  value: 16
+lora_dropout:
+  desc: ''
+  sort: 7
+  value: 0.1
+lora_r:
+  desc: ''
+  sort: 5
+  value: 8
+lr_scheduler_kwargs:
+  desc: ''
+  sort: 110
+  value: {}
+lr_scheduler_type:
+  desc: ''
+  sort: 109
+  value: cosine
+max_grad_norm:
+  desc: ''
+  sort: 106
+  value: 1.0
+max_length:
+  desc: ''
+  sort: 4
+  value: 1024
+max_position_embeddings:
+  desc: ''
+  sort: 12
+  value: 40960
+max_steps:
+  desc: ''
+  sort: 108
+  value: -1
+max_window_layers:
+  desc: ''
+  sort: 19
+  value: 28
+metric_for_best_model:
+  desc: ''
+  sort: 156
+  value: null
+min_length:
+  desc: ''
+  sort: 56
+  value: 0
+model_init_kwargs:
+  desc: ''
+  sort: 218
+  value: null
+model_num_parameters:
+  desc: ''
+  sort: 227
+  value: 1729295360
+model_path:
+  desc: ''
+  sort: 0
+  value: ./output/elderly/sft_merged_model
+model_type:
+  desc: ''
+  sort: 82
+  value: qwen3
+mp_parameters:
+  desc: ''
+  sort: 199
+  value: ''
+neftune_noise_alpha:
+  desc: ''
+  sort: 210
+  value: null
+no_cuda:
+  desc: ''
+  sort: 128
+  value: false
+no_repeat_ngram_size:
+  desc: ''
+  sort: 66
+  value: 0
+num_attention_heads:
+  desc: ''
+  sort: 16
+  value: 16
+num_beam_groups:
+  desc: ''
+  sort: 78
+  value: 1
+num_beams:
+  desc: ''
+  sort: 59
+  value: 1
+num_hidden_layers:
+  desc: ''
+  sort: 15
+  value: 28
+num_key_value_heads:
+  desc: ''
+  sort: 20
+  value: 8
+num_return_sequences:
+  desc: ''
+  sort: 69
+  value: 1
+num_train_epochs:
+  desc: ''
+  sort: 107
+  value: 1
+optim:
+  desc: ''
+  sort: 167
+  value: adamw_torch_fused
+optim_args:
+  desc: ''
+  sort: 168
+  value: null
+optim_target_modules:
+  desc: ''
+  sort: 211
+  value: null
+output_attentions:
+  desc: ''
+  sort: 85
+  value: false
+output_dir:
+  desc: ''
+  sort: 86
+  value: ./output/elderly/rm_model_temp_elderly
+output_hidden_states:
+  desc: ''
+  sort: 32
+  value: false
+output_scores:
+  desc: ''
+  sort: 70
+  value: false
+overwrite_output_dir:
+  desc: ''
+  sort: 87
+  value: false
+pad_to_multiple_of:
+  desc: ''
+  sort: 224
+  value: null
+pad_token:
+  desc: ''
+  sort: 223
+  value: <PAD_TOKEN>
+pad_token_id:
+  desc: ''
+  sort: 52
+  value: 151643
+parallelism_config:
+  desc: ''
+  sort: 164
+  value: null
+past_index:
+  desc: ''
+  sort: 150
+  value: -1
+peft_config:
+  desc: ''
+  sort: 10
+  value:
+    default: 'LoraConfig(task_type=''SEQ_CLS'', peft_type=<PeftType.LORA: ''LORA''>,
+      auto_mapping=None, base_model_name_or_path=''./output/elderly/sft_merged_model'',
+      revision=None, inference_mode=False, r=8, target_modules={''gate_proj'', ''v_proj'',
+      ''up_proj'', ''q_proj'', ''k_proj'', ''down_proj'', ''o_proj''}, exclude_modules=None,
+      lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias=''none'', use_rslora=False,
+      modules_to_save=[''classifier'', ''score''], init_lora_weights=True, layers_to_transform=None,
+      layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None,
+      megatron_core=''megatron.core'', trainable_token_indices=None, loftq_config={},
+      eva_config=None, corda_config=None, use_dora=False, use_qalora=False, qalora_group_size=16,
+      layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False),
+      lora_bias=False, target_parameters=None)'
+per_device_eval_batch_size:
+  desc: ''
+  sort: 94
+  value: 1
+per_device_train_batch_size:
+  desc: ''
+  sort: 93
+  value: 1
+per_gpu_eval_batch_size:
+  desc: ''
+  sort: 96
+  value: null
+per_gpu_train_batch_size:
+  desc: ''
+  sort: 95
+  value: null
+prediction_loss_only:
+  desc: ''
+  sort: 92
+  value: false
+prefix:
+  desc: ''
+  sort: 50
+  value: null
+problem_type:
+  desc: ''
+  sort: 48
+  value: null
+project:
+  desc: ''
+  sort: 173
+  value: huggingface
+pruned_heads:
+  desc: ''
+  sort: 35
+  value: {}
+push_to_hub:
+  desc: ''
+  sort: 182
+  value: false
+push_to_hub_model_id:
+  desc: ''
+  sort: 196
+  value: null
+push_to_hub_organization:
+  desc: ''
+  sort: 197
+  value: null
+push_to_hub_token:
+  desc: ''
+  sort: 198
+  value: <PUSH_TO_HUB_TOKEN>
+ray_scope:
+  desc: ''
+  sort: 203
+  value: last
+remove_invalid_values:
+  desc: ''
+  sort: 74
+  value: false
+remove_unused_columns:
+  desc: ''
+  sort: 153
+  value: false
+repetition_penalty:
+  desc: ''
+  sort: 64
+  value: 1.0
+report_to:
+  desc: ''
+  sort: 172
+  value:
+  - swanlab
+restore_callback_states_from_checkpoint:
+  desc: ''
+  sort: 127
+  value: false
+resume_from_checkpoint:
+  desc: ''
+  sort: 183
+  value: null
+return_dict:
+  desc: ''
+  sort: 31
+  value: true
+return_dict_in_generate:
+  desc: ''
+  sort: 71
+  value: false
+rm_adapter_output_dir:
+  desc: ''
+  sort: 2
+  value: ./output/elderly/rm_adapter
+rms_norm_eps:
+  desc: ''
+  sort: 24
+  value: 1.0e-06
+rope_scaling:
+  desc: ''
+  sort: 27
+  value: null
+rope_theta:
+  desc: ''
+  sort: 26
+  value: 1000000
+run_name:
+  desc: ''
+  sort: 151
+  value: rm-training-elderly
+save_on_each_node:
+  desc: ''
+  sort: 125
+  value: false
+save_only_model:
+  desc: ''
+  sort: 126
+  value: false
+save_safetensors:
+  desc: ''
+  sort: 124
+  value: true
+save_steps:
+  desc: ''
+  sort: 122
+  value: 200
+save_strategy:
+  desc: ''
+  sort: 121
+  value: steps
+save_total_limit:
+  desc: ''
+  sort: 123
+  value: 2
+seed:
+  desc: ''
+  sort: 131
+  value: 42
+sep_token_id:
+  desc: ''
+  sort: 54
+  value: null
+skip_memory_metrics:
+  desc: ''
+  sort: 180
+  value: true
+sliding_window:
+  desc: ''
+  sort: 18
+  value: null
+suppress_tokens:
+  desc: ''
+  sort: 76
+  value: null
+system_prompt:
+  desc: ''
+  sort: 3
+  value: 你是一个专门为老年人提供生活帮助和健康咨询的智能助手。请用温和、耐心、详细的语言回答问题。
+task_specific_params:
+  desc: ''
+  sort: 47
+  value: null
+temperature:
+  desc: ''
+  sort: 60
+  value: 1.0
+tf32:
+  desc: ''
+  sort: 140
+  value: null
+tf_legacy_loss:
+  desc: ''
+  sort: 83
+  value: false
+tie_encoder_decoder:
+  desc: ''
+  sort: 42
+  value: false
+tie_word_embeddings:
+  desc: ''
+  sort: 36
+  value: true
+tokenizer_class:
+  desc: ''
+  sort: 49
+  value: null
+top_k:
+  desc: ''
+  sort: 61
+  value: 50
+top_p:
+  desc: ''
+  sort: 62
+  value: 1.0
+torch_compile:
+  desc: ''
+  sort: 205
+  value: false
+torch_compile_backend:
+  desc: ''
+  sort: 206
+  value: null
+torch_compile_mode:
+  desc: ''
+  sort: 207
+  value: null
+torch_empty_cache_steps:
+  desc: ''
+  sort: 100
+  value: null
+torchdynamo:
+  desc: ''
+  sort: 202
+  value: null
+torchscript:
+  desc: ''
+  sort: 33
+  value: false
+tpu_metrics_debug:
+  desc: ''
+  sort: 144
+  value: false
+tpu_num_cores:
+  desc: ''
+  sort: 143
+  value: null
+trackio_space_id:
+  desc: ''
+  sort: 174
+  value: trackio
+transformers_version:
+  desc: ''
+  sort: 81
+  value: 4.57.1
+typical_p:
+  desc: ''
+  sort: 63
+  value: 1.0
+use_bfloat16:
+  desc: ''
+  sort: 84
+  value: false
+use_cache:
+  desc: ''
+  sort: 25
+  value: false
+use_cpu:
+  desc: ''
+  sort: 129
+  value: false
+use_legacy_prediction_loop:
+  desc: ''
+  sort: 181
+  value: false
+use_liger_kernel:
+  desc: ''
+  sort: 214
+  value: false
+use_mps_device:
+  desc: ''
+  sort: 130
+  value: false
+use_sliding_window:
+  desc: ''
+  sort: 17
+  value: false
+use_swanlab:
+  desc: ''
+  sort: 8
+  value: true
+vocab_size:
+  desc: ''
+  sort: 11
+  value: 151936
+warmup_ratio:
+  desc: ''
+  sort: 111
+  value: 0.0
+warmup_steps:
+  desc: ''
+  sort: 112
+  value: 50
+weight_decay:
+  desc: ''
+  sort: 102
+  value: 0.0

@@ -1,0 +1,24 @@
+dataset:
+  desc: ''
+  sort: 4
+  value: data/mixed_partially_shuffled.json
+lora_alpha:
+  desc: ''
+  sort: 3
+  value: 16
+lora_r:
+  desc: ''
+  sort: 2
+  value: 8
+method:
+  desc: ''
+  sort: 1
+  value: SFT_with_Trainer
+model:
+  desc: ''
+  sort: 0
+  value: ./Qwen3/Qwen3-1.7B
+system_prompt:
+  desc: ''
+  sort: 5
+  value: 你是一个专门为老年人提供生活帮助和健康咨询的智能助手。请用温和、耐心、详细的语言回答问题，考虑到老年人可能存在的视力、听力和认知能力下降的问题。

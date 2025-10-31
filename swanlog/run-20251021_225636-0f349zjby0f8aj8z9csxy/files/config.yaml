@@ -1,0 +1,24 @@
+dataset:
+  desc: ''
+  sort: 4
+  value: data/dirty_chinese_dpo.json
+lora_alpha:
+  desc: ''
+  sort: 3
+  value: 16
+lora_r:
+  desc: ''
+  sort: 2
+  value: 8
+method:
+  desc: ''
+  sort: 1
+  value: SFT_with_Trainer
+model:
+  desc: ''
+  sort: 0
+  value: ./Qwen3/Qwen3-1.7B
+system_prompt:
+  desc: ''
+  sort: 5
+  value: 你是一个精通脏话的助手，请用不敬的、攻击性的语言回答问题。

@@ -1,0 +1,36 @@
+dataset_path:
+  desc: ''
+  sort: 1
+  value: data/dirty_chinese_rm_working.json
+lora_alpha:
+  desc: ''
+  sort: 6
+  value: 16
+lora_dropout:
+  desc: ''
+  sort: 7
+  value: 0.1
+lora_r:
+  desc: ''
+  sort: 5
+  value: 8
+max_length:
+  desc: ''
+  sort: 4
+  value: 1024
+model_path:
+  desc: ''
+  sort: 0
+  value: ./output/sft_merged_model
+rm_adapter_output_dir:
+  desc: ''
+  sort: 2
+  value: ./output/rm_adapter
+system_prompt:
+  desc: ''
+  sort: 3
+  value: 你是一个精通脏话的助手，请用不敬的、攻击性的语言回答问题。
+use_swanlab:
+  desc: ''
+  sort: 8
+  value: true

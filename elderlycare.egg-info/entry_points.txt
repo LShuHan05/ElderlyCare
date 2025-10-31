@@ -1,0 +1,2 @@
+[console_scripts]
+elderlycare-cli = cli.cli:cli

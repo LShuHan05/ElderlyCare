@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cli/__init__.py
+cli/__main__.py
+cli/cli.py
+elderlycare.egg-info/PKG-INFO
+elderlycare.egg-info/SOURCES.txt
+elderlycare.egg-info/dependency_links.txt
+elderlycare.egg-info/entry_points.txt
+elderlycare.egg-info/requires.txt
+elderlycare.egg-info/top_level.txt
